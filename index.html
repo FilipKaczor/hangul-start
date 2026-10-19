@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="Ćwicz hangul: alfabet, sylaby i własne słówka.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Hangul">
+  <title>Hangul — koreański krok po kroku</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Hangul — strona główna"><span class="brand-mark">한</span><span><b>hangul</b><small>TWÓJ KOREAŃSKI START</small></span></a>
+      <div class="side-label">NAUKA</div>
+      <nav class="nav-list" aria-label="Nawigacja">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span> Przegląd</button>
+        <button class="nav-item" data-page="alphabet"><span class="nav-icon">가</span> Alfabet hangul</button>
+        <button class="nav-item" data-page="syllables"><span class="nav-icon">글</span> Budowanie sylab</button>
+        <button class="nav-item" data-page="vocabulary"><span class="nav-icon">✳</span> Moje słówka <span class="nav-count" id="word-count">0</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-card"><span class="mini-spark">✦</span><b>Małe kroki, wielki postęp.</b><p>Naucz się dziś jednej nowej rzeczy.</p></div><div class="profile"><div class="avatar">안</div><span><b>Twój zeszyt</b><small>Nauka na własnym tempie</small></span></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="crumb"><span>Nauka</span><span class="slash">/</span><b id="crumb-current">Przegląd</b></div><div class="top-right"><button class="btn btn-soft install-button" id="install-app" hidden>Zainstaluj</button><span class="today" id="today"></span><span class="top-avatar">한</span></div></header>
+      <div id="page-content" class="page-content"></div>
+      <footer>Ucz się we własnym tempie <span>·</span> 화이팅! <span class="footer-heart">♥</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
