@@ -4,3 +4,33 @@
 .syllable-reference{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin-top:14px;max-height:390px;overflow:auto}.syllable-reference>div{border:1px solid #eeeee9;border-radius:7px;padding:6px 2px;text-align:center;background:#fff}.syllable-reference b{display:block;font:500 17px 'Noto Sans KR'}.syllable-reference span{font-size:8px;color:#8b9088}.syllable-reference summary{list-style:none}.syllable-reference summary::-webkit-details-marker{display:none}@media(max-width:620px){.syllable-reference{grid-template-columns:repeat(7,1fr)}}
 
 .install-button{font-size:10px;padding:7px 10px}.install-button[hidden]{display:none}@media(max-width:620px){.top-right{gap:8px}.install-button{padding:6px 8px;font-size:9px}}
+
+/* Trudniejsze sylaby, słowa i liczby */
+.syllable-mode-tabs{width:max-content;margin:0 0 16px;max-width:100%;overflow:auto}
+.advanced-builder{grid-template-columns:1fr 1fr 1.3fr .85fr;margin:8px 0 12px;align-items:stretch}
+.builder-final{grid-column:auto}
+.final-choices{max-height:214px;overflow:auto}
+.final-choices .builder-choice{min-width:31px;width:31px;padding:0;font-size:16px}
+.advanced-parts{font-size:10px;color:#5e705f;margin-top:7px}
+.advanced-parts span{display:block;color:#9a9e96;margin-top:4px}
+.advanced-builder .builder-output .study-name{max-width:175px;line-height:1.5}
+.advanced-filters{width:max-content;max-width:100%;margin-bottom:14px;overflow:auto}
+.advanced-word-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.advanced-word-card{min-width:0;border:1px solid #eeeee9;border-radius:11px;background:#fff;padding:13px}
+.advanced-word-top{display:flex;align-items:start;justify-content:space-between;gap:8px}
+.advanced-hangul{font:500 25px 'Noto Sans KR';letter-spacing:.5px}
+.advanced-group{font-size:9px;color:#858b82;background:#f4f4ef;border-radius:10px;padding:4px 7px}
+.advanced-roman{font-size:11px;font-weight:700;color:var(--green);margin-top:2px}
+.advanced-meaning{font-size:11px;color:#50564e;margin-top:4px}
+.advanced-breakdown{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.complex-syllable{display:grid;justify-items:center;min-width:45px;border-radius:7px;background:#f7f7f3;padding:5px 4px}
+.complex-syllable b{font:500 17px 'Noto Sans KR'}
+.complex-syllable small{font-size:8px;color:#8f948b;margin-top:2px;text-align:center}
+.advanced-note{font-size:9px;line-height:1.5;color:#969a92;min-height:28px;margin:9px 0}
+.add-advanced-word{font-size:10px;padding:8px 9px;width:100%}
+.quiz-action-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:10px}
+.basic-output{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px 0;color:#7c8278}
+.basic-output b{font:500 40px 'Noto Sans KR';color:var(--green)}
+.basic-output span{font-size:11px;color:#868b82}
+@media(max-width:900px){.advanced-word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advanced-builder{grid-template-columns:1fr 1fr}.advanced-builder .builder-output{grid-column:1/-1;padding:13px}}
+@media(max-width:620px){.syllable-mode-tabs{width:100%}.syllable-mode-tabs button{white-space:nowrap}.advanced-word-grid{grid-template-columns:1fr}.advanced-builder{grid-template-columns:1fr 1fr}.builder-final{grid-column:1/-1}.final-choices{max-height:155px}.advanced-builder .builder-output{grid-column:1/-1}.advanced-note{min-height:0}}
