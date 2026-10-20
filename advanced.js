@@ -147,9 +147,10 @@ quizMarkup = function() {
   const prompt=advanced?'ten element':syllables?'tę sylabę':'ten znak';
   const heading=advanced?'Rozpoznaj słowo lub liczbę':syllables?'Rozpoznaj sylabę':'Rozpoznaj znak';
   const footer=advanced?'20 losowych słów i liczb':syllables?'20 losowych sylab':'Wszystkie '+ALL.length+' znaki';
+  const meaning=advanced&&q.answered?"<div class='quiz-translation'><span>ZNACZENIE</span><b>"+esc(item.translation)+"</b></div>":'';
   return "<div class='panel quiz-panel'><div class='panel-heading'><h2>"+heading+"</h2><span>"+(q.index+1)+" z "+q.total+"</span></div><div class='quiz-progress'><div style='width:"+(q.index/q.total*100)+"%'></div></div><div class='quiz-prompt'><div class='quiz-char'>"+esc(item.char)+"</div><div class='quiz-question'>Jak czytamy "+prompt+"?</div></div><div class='quiz-options'>"+
     item.options.map(x=>"<button class='quiz-option' data-answer='"+esc(x)+"' "+(q.answered?'disabled':'')+">"+esc(x)+"</button>").join('')+
-    "</div><div class='quiz-action-row'><button class='btn btn-outline' data-answer='__unknown__' "+(q.answered?'disabled':'')+">Nie wiem — dodaj do powtórki</button><button class='btn btn-soft' id='mark-for-review' "+(q.missed.some(x=>x.char===item.char)?'disabled':'')+">"+(q.missed.some(x=>x.char===item.char)?'✓ Dodano do powtórki':'＋ Dodaj do powtórki')+"</button></div><div class='feedback'>"+(q.feedback||'Wybierz poprawną transkrypcję.')+"</div><div class='quiz-footer'><span>"+footer+"</span><button class='btn btn-primary' id='quiz-next' "+(q.answered?'':'disabled')+">"+(q.index===q.total-1?'Zakończ quiz':'Dalej →')+"</button></div></div>";
+    "</div>"+meaning+"<div class='quiz-action-row'><button class='btn btn-outline' data-answer='__unknown__' "+(q.answered?'disabled':'')+">Nie wiem — dodaj do powtórki</button><button class='btn btn-soft' id='mark-for-review' "+(q.missed.some(x=>x.char===item.char)?'disabled':'')+">"+(q.missed.some(x=>x.char===item.char)?'✓ Dodano do powtórki':'＋ Dodaj do powtórki')+"</button></div><div class='feedback'>"+(q.feedback||'Wybierz poprawną transkrypcję.')+"</div><div class='quiz-footer'><span>"+footer+"</span><button class='btn btn-primary' id='quiz-next' "+(q.answered?'':'disabled')+">"+(q.index===q.total-1?'Zakończ quiz':'Dalej →')+"</button></div></div>";
 };
 
 document.addEventListener('click',function(event) {
@@ -176,3 +177,4 @@ document.addEventListener('click',function(event) {
   }
 });
 render();
+
