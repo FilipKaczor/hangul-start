@@ -35,6 +35,7 @@
 .quiz-translation{margin:2px 0 10px;padding:12px 14px;border:1px solid #e6ede5;border-radius:10px;background:#f4f7f2;text-align:center}
 .quiz-translation span{display:block;margin-bottom:4px;color:#879184;font-size:9px;font-weight:700;letter-spacing:1px}
 .quiz-translation b{font-size:13px;font-weight:600;color:var(--green-dark)}
+.quiz-save-row{display:flex;justify-content:center;margin:0 0 8px}
 @media(max-width:900px){.advanced-word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advanced-builder{grid-template-columns:1fr 1fr}.advanced-builder .builder-output{grid-column:1/-1;padding:13px}}
 @media(max-width:620px){.syllable-mode-tabs{width:100%}.syllable-mode-tabs button{white-space:nowrap}.advanced-word-grid{grid-template-columns:1fr}.advanced-builder{grid-template-columns:1fr 1fr}.builder-final{grid-column:1/-1}.final-choices{max-height:155px}.advanced-builder .builder-output{grid-column:1/-1}.advanced-note{min-height:0}}
 

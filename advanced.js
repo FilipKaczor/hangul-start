@@ -30,7 +30,61 @@ const CHALLENGE_ITEMS = [
   {char:'읽다',roman:'iktta',translation:'czytać',note:'Sylaba 읽 zawiera cztery elementy: ㅇ + ㅣ + ㄹ + ㄱ.',group:'Słowa'},
   {char:'없어요',roman:'ŏpsŏyo',translation:'nie ma; nie istnieje',note:'없 zawiera złożoną końcówkę ㅄ.',group:'Słowa'},
   {char:'안녕하세요',roman:'annyŏnghaseyo',translation:'dzień dobry; cześć',note:'Grzeczne powitanie.',group:'Słowa'},
-  {char:'괜찮아요',roman:"kwaench'anayo",translation:'w porządku; nic nie szkodzi',note:'Zawiera ㅙ i złożoną końcówkę ㄶ.',group:'Słowa'}
+  {char:'괜찮아요',roman:"kwaench'anayo",translation:'w porządku; nic nie szkodzi',note:'Zawiera ㅙ i złożoną końcówkę ㄶ.',group:'Słowa'},
+  {char:'사람',roman:'saram',translation:'osoba; człowiek',note:'Częste słowo w codziennych rozmowach.',group:'Słowa'},
+  {char:'여자',roman:'yŏja',translation:'kobieta; dziewczyna',note:'',group:'Słowa'},
+  {char:'남자',roman:'namja',translation:'mężczyzna; chłopak',note:'',group:'Słowa'},
+  {char:'아이',roman:'ai',translation:'dziecko',note:'',group:'Słowa'},
+  {char:'가족',roman:'kajok',translation:'rodzina',note:'',group:'Słowa'},
+  {char:'어머니',roman:'ŏmŏni',translation:'matka; mama',note:'Uprzejme, neutralne określenie mamy.',group:'Słowa'},
+  {char:'아버지',roman:'abŏji',translation:'ojciec; tata',note:'Uprzejme, neutralne określenie taty.',group:'Słowa'},
+  {char:'집',roman:'chip',translation:'dom; mieszkanie',note:'',group:'Słowa'},
+  {char:'방',roman:'pang',translation:'pokój',note:'',group:'Słowa'},
+  {char:'물',roman:'mul',translation:'woda',note:'',group:'Słowa'},
+  {char:'밥',roman:'pap',translation:'ugotowany ryż; posiłek',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'커피',roman:"k'ŏp'i",translation:'kawa',note:'',group:'Słowa'},
+  {char:'차',roman:"ch'a",translation:'herbata; samochód',note:'To samo słowo ma kilka znaczeń zależnych od kontekstu.',group:'Słowa'},
+  {char:'이름',roman:'irŭm',translation:'imię; nazwa',note:'',group:'Słowa'},
+  {char:'오늘',roman:'onŭl',translation:'dzisiaj',note:'',group:'Słowa'},
+  {char:'내일',roman:'naeil',translation:'jutro',note:'',group:'Słowa'},
+  {char:'시간',roman:'shigan',translation:'czas; godzina',note:'',group:'Słowa'},
+  {char:'아침',roman:"ach'im",translation:'poranek; śniadanie',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'저녁',roman:'chŏnyŏk',translation:'wieczór; kolacja',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'시장',roman:'shijang',translation:'targ; rynek',note:'',group:'Słowa'},
+  {char:'가게',roman:'kage',translation:'sklep',note:'',group:'Słowa'},
+  {char:'병원',roman:'pyŏngwŏn',translation:'szpital; przychodnia',note:'',group:'Słowa'},
+  {char:'버스',roman:'pŏsŭ',translation:'autobus',note:'',group:'Słowa'},
+  {char:'지하철',roman:"chihach'ŏl",translation:'metro',note:'Dosłownie: kolej podziemna.',group:'Słowa'},
+  {char:'책상',roman:"ch'aeksang",translation:'biurko',note:'',group:'Słowa'},
+  {char:'문',roman:'mun',translation:'drzwi',note:'',group:'Słowa'},
+  {char:'사진',roman:'sajin',translation:'zdjęcie; fotografia',note:'',group:'Słowa'},
+  {char:'음악',roman:'ŭmak',translation:'muzyka',note:'',group:'Słowa'},
+  {char:'영화',roman:'yŏnghwa',translation:'film',note:'',group:'Słowa'},
+  {char:'여행',roman:'yŏhaeng',translation:'podróż; podróżowanie',note:'',group:'Słowa'},
+  {char:'꽃',roman:'kkot',translation:'kwiat',note:'Sylaba ma końcową spółgłoskę ㅊ.',group:'Słowa'},
+  {char:'하늘',roman:'hanŭl',translation:'niebo',note:'',group:'Słowa'},
+  {char:'주말',roman:'chumal',translation:'weekend',note:'',group:'Słowa'},
+  {char:'문제',roman:'munje',translation:'problem; pytanie; zadanie',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'생각',roman:'saenggak',translation:'myśl; pomysł',note:'',group:'Słowa'},
+  {char:'먹다',roman:'mŏkta',translation:'jeść',note:'Podstawowa forma czasownika, taka jak polskie „jeść”.',group:'Słowa'},
+  {char:'마시다',roman:'mashida',translation:'pić',note:'',group:'Słowa'},
+  {char:'보다',roman:'poda',translation:'widzieć; oglądać',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'오다',roman:'oda',translation:'przychodzić; przyjeżdżać',note:'',group:'Słowa'},
+  {char:'가다',roman:'kada',translation:'iść; jechać',note:'',group:'Słowa'},
+  {char:'하다',roman:'hada',translation:'robić',note:'Występuje też w wielu czasownikach złożonych.',group:'Słowa'},
+  {char:'듣다',roman:'tŭtta',translation:'słuchać; słyszeć',note:'',group:'Słowa'},
+  {char:'배우다',roman:'paeuda',translation:'uczyć się',note:'',group:'Słowa'},
+  {char:'만나다',roman:'mannada',translation:'spotykać; poznawać',note:'',group:'Słowa'},
+  {char:'사다',roman:'sada',translation:'kupować',note:'',group:'Słowa'},
+  {char:'주다',roman:'chuda',translation:'dawać',note:'',group:'Słowa'},
+  {char:'알다',roman:'alda',translation:'wiedzieć; znać',note:'',group:'Słowa'},
+  {char:'모르다',roman:'morŭda',translation:'nie wiedzieć; nie znać',note:'',group:'Słowa'},
+  {char:'있다',roman:'itta',translation:'być; znajdować się; mieć',note:'Znaczenie zależy od kontekstu.',group:'Słowa'},
+  {char:'없다',roman:'ŏpta',translation:'nie być; nie mieć',note:'Przeciwieństwo 있다.',group:'Słowa'},
+  {char:'필요하다',roman:"p'iryohada",translation:'być potrzebnym; potrzebować',note:'',group:'Słowa'},
+  {char:'쉽다',roman:'swipta',translation:'łatwy',note:'',group:'Słowa'},
+  {char:'어렵다',roman:'ŏryŏpta',translation:'trudny',note:'',group:'Słowa'},
+  {char:'맛있다',roman:'mashitta',translation:'być smacznym; smaczny',note:'',group:'Słowa'}
 ];
 const NUMBER_ITEMS = [
   {char:'영',roman:'yŏng',translation:'0 · zero (sino-koreańska)',note:'Liczby sino-koreańskie stosuje się m.in. w datach, minutach, cenach i numerach telefonu.',group:'Liczby'},
@@ -148,9 +202,11 @@ quizMarkup = function() {
   const heading=advanced?'Rozpoznaj słowo lub liczbę':syllables?'Rozpoznaj sylabę':'Rozpoznaj znak';
   const footer=advanced?'20 losowych słów i liczb':syllables?'20 losowych sylab':'Wszystkie '+ALL.length+' znaki';
   const meaning=advanced&&q.answered?"<div class='quiz-translation'><span>ZNACZENIE</span><b>"+esc(item.translation)+"</b></div>":'';
+  const saved=advanced&&item.group==='Słowa'&&isInMyWords(item);
+  const saveWord=advanced&&q.answered&&item.group==='Słowa'?"<div class='quiz-save-row'><button class='btn "+(saved?'btn-soft':'btn-outline')+"' data-add-quiz-word='"+q.index+"' "+(saved?'disabled':'')+">"+(saved?'✓ W moich słówkach':'＋ Dodaj do moich słówek')+"</button></div>":'';
   return "<div class='panel quiz-panel'><div class='panel-heading'><h2>"+heading+"</h2><span>"+(q.index+1)+" z "+q.total+"</span></div><div class='quiz-progress'><div style='width:"+(q.index/q.total*100)+"%'></div></div><div class='quiz-prompt'><div class='quiz-char'>"+esc(item.char)+"</div><div class='quiz-question'>Jak czytamy "+prompt+"?</div></div><div class='quiz-options'>"+
     item.options.map(x=>"<button class='quiz-option' data-answer='"+esc(x)+"' "+(q.answered?'disabled':'')+">"+esc(x)+"</button>").join('')+
-    "</div>"+meaning+"<div class='quiz-action-row'><button class='btn btn-outline' data-answer='__unknown__' "+(q.answered?'disabled':'')+">Nie wiem — dodaj do powtórki</button><button class='btn btn-soft' id='mark-for-review' "+(q.missed.some(x=>x.char===item.char)?'disabled':'')+">"+(q.missed.some(x=>x.char===item.char)?'✓ Dodano do powtórki':'＋ Dodaj do powtórki')+"</button></div><div class='feedback'>"+(q.feedback||'Wybierz poprawną transkrypcję.')+"</div><div class='quiz-footer'><span>"+footer+"</span><button class='btn btn-primary' id='quiz-next' "+(q.answered?'':'disabled')+">"+(q.index===q.total-1?'Zakończ quiz':'Dalej →')+"</button></div></div>";
+    "</div>"+meaning+saveWord+"<div class='quiz-action-row'><button class='btn btn-outline' data-answer='__unknown__' "+(q.answered?'disabled':'')+">Nie wiem — dodaj do powtórki</button><button class='btn btn-soft' id='mark-for-review' "+(q.missed.some(x=>x.char===item.char)?'disabled':'')+">"+(q.missed.some(x=>x.char===item.char)?'✓ Dodano do powtórki':'＋ Dodaj do powtórki')+"</button></div><div class='feedback'>"+(q.feedback||'Wybierz poprawną transkrypcję.')+"</div><div class='quiz-footer'><span>"+footer+"</span><button class='btn btn-primary' id='quiz-next' "+(q.answered?'':'disabled')+">"+(q.index===q.total-1?'Zakończ quiz':'Dalej →')+"</button></div></div>";
 };
 
 document.addEventListener('click',function(event) {
@@ -165,6 +221,21 @@ document.addEventListener('click',function(event) {
   if(target.hasAttribute('data-add-advanced')) {
     const item=ALL_CHALLENGES[Number(target.dataset.addAdvanced)];
     if(!item||isInMyWords(item)) return;
+    state.words.unshift({id:'advanced-'+Date.now().toString(),hangul:item.char,roman:item.roman,translation:item.translation,note:item.note});
+    persist();
+    const count=document.getElementById('word-count');
+    if(count) count.textContent=state.words.length;
+    target.textContent='✓ W moich słówkach';
+    target.classList.remove('btn-outline');
+    target.classList.add('btn-soft');
+    target.disabled=true;
+    toast('Dodano do Twoich słówek ✦');
+    return;
+  }
+  if(target.hasAttribute('data-add-quiz-word')) {
+    const q=quiz;
+    const item=q&&q.kind==='advanced'&&q.answered?q.items[q.index]:null;
+    if(!item||item.group!=='Słowa'||isInMyWords(item)) return;
     state.words.unshift({id:'advanced-'+Date.now().toString(),hangul:item.char,roman:item.roman,translation:item.translation,note:item.note});
     persist();
     const count=document.getElementById('word-count');
