@@ -36,6 +36,12 @@
 .quiz-translation span{display:block;margin-bottom:4px;color:#879184;font-size:9px;font-weight:700;letter-spacing:1px}
 .quiz-translation b{font-size:13px;font-weight:600;color:var(--green-dark)}
 .quiz-save-row{display:flex;justify-content:center;margin:0 0 8px}
+.vocabulary-quiz-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.vocabulary-quiz-actions .btn{white-space:nowrap}
+.vocab-mode-note{margin:-12px 0 14px}
+.feedback.wrong{color:#a45e4c}
+.feedback.correct{color:var(--green-dark)}
+@media(max-width:620px){.vocabulary-quiz-actions{width:100%;justify-content:stretch}.vocabulary-quiz-actions .btn{flex:1;white-space:normal}}
 @media(max-width:900px){.advanced-word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advanced-builder{grid-template-columns:1fr 1fr}.advanced-builder .builder-output{grid-column:1/-1;padding:13px}}
 @media(max-width:620px){.syllable-mode-tabs{width:100%}.syllable-mode-tabs button{white-space:nowrap}.advanced-word-grid{grid-template-columns:1fr}.advanced-builder{grid-template-columns:1fr 1fr}.builder-final{grid-column:1/-1}.final-choices{max-height:155px}.advanced-builder .builder-output{grid-column:1/-1}.advanced-note{min-height:0}}
 

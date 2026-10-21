@@ -1,4 +1,4 @@
-const CACHE = 'hangul-start-v2';
+const CACHE = 'hangul-start-v3';
 const ASSETS = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest', './icon.svg', './advanced.js'];
 
 self.addEventListener('install', event => {
@@ -20,3 +20,4 @@ self.addEventListener('fetch', event => {
     return response;
   })));
 });
+
